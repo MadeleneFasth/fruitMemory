@@ -83,7 +83,7 @@ cardsArray.sort(() => Math.random() - 0.5);
 
 //få ut ett kort för varje kort i listan, med 'baksidan' uppåt
 $.each( cardsArray, function distributeCards(index, value ){
-    cardContainerList.append($(`<li><img src="https://github.com/MadeleneFasth/fruitMemory/blob/main/images/back.png" class="${index}"></li>`))
+    cardContainerList.append($(`<li><img src="/main/images/back.png" class="${index}"></li>`))
 });
 
 
