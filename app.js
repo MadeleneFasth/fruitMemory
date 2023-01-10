@@ -3,76 +3,76 @@ const cardContainerList = $(".card-container-ul");
 let cardsArray = [
     { 
         title: "kiwi", 
-        src: "./images/kiwi.png" 
+        src: "/images/kiwi.png" 
       },
       { 
         title: "durian", 
-        src: "./images/durian.png" 
+        src: "/images/durian.png" 
       },
       { 
         title: "jackfruit", 
-        src: "./images/jackfruit.png" 
+        src: "/images/jackfruit.png" 
       },
       { 
         title: "dragon-fruit", 
-        src: "./images/dragon-fruit.png" 
+        src: "/images/dragon-fruit.png" 
       },
       { 
         title: "orange", 
-        src: "./images/orange.png" 
+        src: "/images/orange.png" 
       },
       { 
         title: "lychee", 
-        src: "./images/lychee.png" 
+        src: "/images/lychee.png" 
       },
       { 
         title: "figs", 
-        src: "./images/figs.png" 
+        src: "/images/figs.png" 
       },
       { 
         title: "cantaloupe", 
-        src: "./images/cantaloupe.png" 
+        src: "/images/cantaloupe.png" 
       },
       { 
         title: "lemon", 
-        src: "./images/lemon.png" 
+        src: "/images/lemon.png" 
       },
 
       { 
         title: "kiwi", 
-        src: "./images/kiwi.png" 
+        src: "/images/kiwi.png" 
       },
       { 
         title: "durian", 
-        src: "./images/durian.png" 
+        src: "/images/durian.png" 
       },
       { 
         title: "jackfruit", 
-        src: "./images/jackfruit.png" 
+        src: "/images/jackfruit.png" 
       },
       { 
         title: "dragon-fruit", 
-        src: "./images/dragon-fruit.png" 
+        src: "/images/dragon-fruit.png" 
       },
       { 
         title: "orange", 
-        src: "./images/orange.png" 
+        src: "/images/orange.png" 
       },
       { 
         title: "lychee", 
-        src: "./images/lychee.png" 
+        src: "/images/lychee.png" 
       },
       { 
         title: "figs", 
-        src: "./images/figs.png" 
+        src: "/images/figs.png" 
       },
       { 
         title: "cantaloupe", 
-        src: "./images/cantaloupe.png" 
+        src: "/images/cantaloupe.png" 
       },
       { 
         title: "lemon", 
-        src: "./images/lemon.png" 
+        src: "/images/lemon.png" 
       },
 ]
 
@@ -105,12 +105,12 @@ function checkForMatch(){
     let img = $("img");
 
     if(chosenCards[0] === chosenCards[1] && chosenCardsIndex[0] !== chosenCardsIndex[1]){
-        $(img[chosenCardsIndex[0]]).attr("src", "./images/blank.png");
-        $(img[chosenCardsIndex[1]]).attr("src", "./images/blank.png");
+        $(img[chosenCardsIndex[0]]).attr("src", "/images/blank.png");
+        $(img[chosenCardsIndex[1]]).attr("src", "/images/blank.png");
  
     } else {
-        $(img[chosenCardsIndex[0]]).attr("src", "./images/back.png");
-        $(img[chosenCardsIndex[1]]).attr("src", "./images/back.png");
+        $(img[chosenCardsIndex[0]]).attr("src", "/images/back.png");
+        $(img[chosenCardsIndex[1]]).attr("src", "/images/back.png");
     }
 
     chosenCards = [];
