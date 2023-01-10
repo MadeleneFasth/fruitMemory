@@ -3,7 +3,7 @@ const cardContainerList = $(".card-container-ul");
 let cardsArray = [
     { 
         title: "kiwi", 
-        src: "./images/kiwi.png" 
+        src: "images/kiwi.png" 
       },
       { 
         title: "durian", 
@@ -83,7 +83,7 @@ cardsArray.sort(() => Math.random() - 0.5);
 
 //få ut ett kort för varje kort i listan, med 'baksidan' uppåt
 $.each( cardsArray, function distributeCards(index, value ){
-    cardContainerList.append($(`<li><img src="/main/images/back.png" class="${index}"></li>`))
+    cardContainerList.append($(`<li><img src="images/back.png" class="${index}"></li>`))
 });
 
 
