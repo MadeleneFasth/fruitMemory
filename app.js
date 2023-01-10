@@ -3,7 +3,7 @@ const cardContainerList = $(".card-container-ul");
 let cardsArray = [
     { 
         title: "kiwi", 
-        src: "images/kiwi.png" 
+        src: "./images/kiwi.png" 
       },
       { 
         title: "durian", 
@@ -83,12 +83,16 @@ cardsArray.sort(() => Math.random() - 0.5);
 
 //få ut ett kort för varje kort i listan, med 'baksidan' uppåt
 $.each( cardsArray, function distributeCards(index, value ){
-    cardContainerList.append($(`<li><img src="../images/back.png" class="${index}"></li>`))
+    cardContainerList.append($(`<li><img src="./images/back.png" class="${index}"></li>`))
 });
 
 
 //vad händer när man klickar på ett kort 
 $("img").click(function() {
+
+        //skapa en if sats att man inte kan klicka på hittade par
+
+
     let cardIndex = this.className;
     chosenCards.push(cardsArray[cardIndex].title);
     chosenCardsIndex.push(cardIndex);
@@ -99,6 +103,10 @@ $("img").click(function() {
         setTimeout(checkForMatch, 200);
     }
 })
+
+
+console.log(chosenCards)
+
 
 function checkForMatch(){
 
@@ -117,3 +125,4 @@ function checkForMatch(){
     chosenCardsIndex = [];
 
 }
+
