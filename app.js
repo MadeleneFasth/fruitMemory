@@ -3,11 +3,11 @@ const cardContainerList = $(".card-container-ul");
 let cardsArray = [
     { 
         title: "kiwi", 
-        src: "/images/kiwi.png" 
+        src: "images/kiwi.png" 
       },
       { 
         title: "durian", 
-        src: "/images/durian.png" 
+        src: "images/durian.png" 
       },
       { 
         title: "jackfruit", 
@@ -68,11 +68,11 @@ let cardsArray = [
       },
       { 
         title: "cantaloupe", 
-        src: "/images/cantaloupe.png" 
+        src: "images/cantaloupe.png" 
       },
       { 
         title: "lemon", 
-        src: "/images/lemon.png" 
+        src: "images/lemon.png" 
       },
 ]
 
@@ -83,7 +83,7 @@ cardsArray.sort(() => Math.random() - 0.5);
 
 //få ut ett kort för varje kort i listan, med 'baksidan' uppåt
 $.each( cardsArray, function distributeCards(index, value ){
-    cardContainerList.append($(`<li><img src="/images/back.png" class="${index}"></li>`))
+    cardContainerList.append($(`<li><img src="images/back.png" class="${index}"></li>`))
 });
 
 
@@ -105,12 +105,12 @@ function checkForMatch(){
     let img = $("img");
 
     if(chosenCards[0] === chosenCards[1] && chosenCardsIndex[0] !== chosenCardsIndex[1]){
-        $(img[chosenCardsIndex[0]]).attr("src", "/images/blank.png");
-        $(img[chosenCardsIndex[1]]).attr("src", "/images/blank.png");
+        $(img[chosenCardsIndex[0]]).attr("src", "images/blank.png");
+        $(img[chosenCardsIndex[1]]).attr("src", "images/blank.png");
  
     } else {
-        $(img[chosenCardsIndex[0]]).attr("src", "/images/back.png");
-        $(img[chosenCardsIndex[1]]).attr("src", "/images/back.png");
+        $(img[chosenCardsIndex[0]]).attr("src", "images/back.png");
+        $(img[chosenCardsIndex[1]]).attr("src", "images/back.png");
     }
 
     chosenCards = [];
